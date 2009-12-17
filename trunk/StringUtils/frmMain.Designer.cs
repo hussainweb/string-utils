@@ -34,6 +34,7 @@
 			this.btnRefreshAll = new System.Windows.Forms.Button();
 			this.btnLoadFile = new System.Windows.Forms.Button();
 			this.grpGeneral = new System.Windows.Forms.GroupBox();
+			this.btnRefreshGeneral = new System.Windows.Forms.Button();
 			this.btnCopyLengthBytes = new System.Windows.Forms.Button();
 			this.btnRefreshLengthBytes = new System.Windows.Forms.Button();
 			this.txtLengthBytes = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@
 			this.btnRefreshLength = new System.Windows.Forms.Button();
 			this.txtLength = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.btnRefreshGeneral = new System.Windows.Forms.Button();
 			this.grpText.SuspendLayout();
 			this.grpGeneral.SuspendLayout();
 			this.SuspendLayout();
@@ -118,6 +118,22 @@
 			this.grpGeneral.TabIndex = 1;
 			this.grpGeneral.TabStop = false;
 			this.grpGeneral.Text = "General";
+			// 
+			// btnRefreshGeneral
+			// 
+			this.btnRefreshGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnRefreshGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRefreshGeneral.Image = global::StringUtils.Properties.Resources.refresh;
+			this.btnRefreshGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnRefreshGeneral.Location = new System.Drawing.Point(142, 115);
+			this.btnRefreshGeneral.Name = "btnRefreshGeneral";
+			this.btnRefreshGeneral.Size = new System.Drawing.Size(128, 24);
+			this.btnRefreshGeneral.TabIndex = 3;
+			this.btnRefreshGeneral.Text = "Refresh Section";
+			this.btnRefreshGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnRefreshGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnRefreshGeneral.UseVisualStyleBackColor = true;
+			this.btnRefreshGeneral.Click += new System.EventHandler(this.btnRefreshGeneral_Click);
 			// 
 			// btnCopyLengthBytes
 			// 
@@ -196,22 +212,6 @@
 			this.label1.Size = new System.Drawing.Size(43, 13);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "&Length:";
-			// 
-			// btnRefreshGeneral
-			// 
-			this.btnRefreshGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnRefreshGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnRefreshGeneral.Image = global::StringUtils.Properties.Resources.refresh;
-			this.btnRefreshGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnRefreshGeneral.Location = new System.Drawing.Point(142, 115);
-			this.btnRefreshGeneral.Name = "btnRefreshGeneral";
-			this.btnRefreshGeneral.Size = new System.Drawing.Size(128, 24);
-			this.btnRefreshGeneral.TabIndex = 3;
-			this.btnRefreshGeneral.Text = "&Refresh Section";
-			this.btnRefreshGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnRefreshGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnRefreshGeneral.UseVisualStyleBackColor = true;
-			this.btnRefreshGeneral.Click += new System.EventHandler(this.btnRefreshGeneral_Click);
 			// 
 			// frmMain
 			// 
