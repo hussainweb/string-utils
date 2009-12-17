@@ -43,6 +43,10 @@
 			this.btnRefreshLength = new System.Windows.Forms.Button();
 			this.txtLength = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnCopyWordCount = new System.Windows.Forms.Button();
+			this.btnRefreshWordCount = new System.Windows.Forms.Button();
+			this.txtWordCount = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.grpText.SuspendLayout();
 			this.grpGeneral.SuspendLayout();
 			this.SuspendLayout();
@@ -103,6 +107,10 @@
 			// grpGeneral
 			// 
 			this.grpGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.grpGeneral.Controls.Add(this.btnCopyWordCount);
+			this.grpGeneral.Controls.Add(this.btnRefreshWordCount);
+			this.grpGeneral.Controls.Add(this.txtWordCount);
+			this.grpGeneral.Controls.Add(this.label3);
 			this.grpGeneral.Controls.Add(this.btnRefreshGeneral);
 			this.grpGeneral.Controls.Add(this.btnCopyLengthBytes);
 			this.grpGeneral.Controls.Add(this.btnRefreshLengthBytes);
@@ -213,6 +221,45 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "&Length:";
 			// 
+			// btnCopyWordCount
+			// 
+			this.btnCopyWordCount.Image = ((System.Drawing.Image)(resources.GetObject("btnCopyWordCount.Image")));
+			this.btnCopyWordCount.Location = new System.Drawing.Point(246, 68);
+			this.btnCopyWordCount.Margin = new System.Windows.Forms.Padding(0);
+			this.btnCopyWordCount.Name = "btnCopyWordCount";
+			this.btnCopyWordCount.Size = new System.Drawing.Size(24, 24);
+			this.btnCopyWordCount.TabIndex = 11;
+			this.btnCopyWordCount.UseVisualStyleBackColor = true;
+			// 
+			// btnRefreshWordCount
+			// 
+			this.btnRefreshWordCount.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshWordCount.Image")));
+			this.btnRefreshWordCount.Location = new System.Drawing.Point(222, 68);
+			this.btnRefreshWordCount.Margin = new System.Windows.Forms.Padding(0);
+			this.btnRefreshWordCount.Name = "btnRefreshWordCount";
+			this.btnRefreshWordCount.Size = new System.Drawing.Size(24, 24);
+			this.btnRefreshWordCount.TabIndex = 10;
+			this.btnRefreshWordCount.UseVisualStyleBackColor = true;
+			this.btnRefreshWordCount.Click += new System.EventHandler(this.btnRefreshWordCount_Click);
+			// 
+			// txtWordCount
+			// 
+			this.txtWordCount.BackColor = System.Drawing.SystemColors.Window;
+			this.txtWordCount.Location = new System.Drawing.Point(119, 71);
+			this.txtWordCount.Name = "txtWordCount";
+			this.txtWordCount.ReadOnly = true;
+			this.txtWordCount.Size = new System.Drawing.Size(100, 20);
+			this.txtWordCount.TabIndex = 9;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(6, 75);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(64, 13);
+			this.label3.TabIndex = 8;
+			this.label3.Text = "&Word Count";
+			// 
 			// frmMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +292,10 @@
 		private System.Windows.Forms.TextBox txtLengthBytes;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnRefreshGeneral;
+		private System.Windows.Forms.Button btnCopyWordCount;
+		private System.Windows.Forms.Button btnRefreshWordCount;
+		private System.Windows.Forms.TextBox txtWordCount;
+		private System.Windows.Forms.Label label3;
 	}
 }
 

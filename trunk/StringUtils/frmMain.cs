@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace StringUtils
 {
@@ -42,6 +43,7 @@ namespace StringUtils
 			{
 				btnRefreshLength_Click(sender, e);
 				btnRefreshLengthBytes_Click(sender, e);
+				btnRefreshWordCount_Click(sender, e);
 			}
 		}
 
@@ -67,7 +69,32 @@ namespace StringUtils
 			}
 		}
 
+		private void btnRefreshWordCount_Click(object sender, EventArgs e)
+		{
+			if (txtDirty)
+			{
+				var filteredString = GetWords(txtString.Text);
+				txtWordCount.Text = filteredString.Length.ToString();
+			}
+		}
+
 		#endregion
+
+		#endregion
+
+		#region Utility methods
+
+		private static string[] GetWords(string text)
+		{
+			if (text.Length == 0)
+			{
+				return new string[] { };
+			}
+
+			var pattern = new Regex("[^a-zA-Z0-9-]+");
+			var filteredString = pattern.Replace(text, " ");
+			return filteredString.Trim().Split(' ');
+		}
 
 		#endregion
 	}
