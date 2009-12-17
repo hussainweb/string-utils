@@ -34,6 +34,7 @@ namespace StringUtils
 			if (txtDirty)
 			{
 				btnRefreshGeneral_Click(sender, e);
+				txtDirty = false;
 			}
 		}
 
